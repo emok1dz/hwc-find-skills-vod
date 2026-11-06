@@ -1,0 +1,142 @@
+# find-skills 检索：帮我找找华为云有没有管理 ECS 的技能？
+# 时间 2026-11-06T04:28Z（UTC）；环境 Linux x86_64，Python 3.13
+# 说明：skill-quality-cli 官方仅提供 linux-arm64 构建，x86_64 无法安装；按 SKILL.md“安装失败不阻塞流程”直接运行脚本
+
+$ python scripts/search-skills.py -k "ECS"
+Found 32 skill(s) for keyword='ECS' category='':
+  (expanded: ECS, 弹性云服务器)
+
+  [31pts] huawei-cloud-ecs-manage (computing/ecs/ecs) matched: ECS,弹性云服务器
+    Use when managing Huawei Cloud ECS (Elastic Cloud Server / 弹性云服务器) instances —
+  lifecycle management (create / start / stop / restart / delete), day-...
+    triggers: ECS 创建失败, 云服务器创建失败, 创建云主机失败, ECS 创建不了
+
+  [29pts] huawei-cloud-computing-query (computing/ops/ecs) matched: ECS,弹性云服务器
+    Queries Huawei Cloud computing resources (ECS/BMS/IMS/AS/CCE), Covers ECS instances, flavors, keypairs, quotas, server groups, block devices, NICs, VN...
+    triggers: 弹性云服务器, ECS, 裸金属, BMS, 镜像
+
+  [26pts] huawei-cloud-ces-ecs-monitoring (monitoring/ces/ecs) matched: ECS
+    Huawei Cloud ECS monitoring skill using Cloud Eye Service (CES). Provides comprehensive monitoring
+  and metrics query for Elastic Cloud Server instan...
+    triggers: Huawei Cloud ECS monitoring, ECS metrics, Cloud Eye Service ECS monitoring, CES ECS monitoring
+
+  [26pts] huawei-cloud-ecs-shutdown-experiment (computing/ecs/ecs) matched: ECS
+    Full lifecycle ECS shutdown fault injection experiment for Huawei Cloud chaos engineering: prepare → execute → analyze. Phase 1 discovers target ECS i...
+    triggers: ECS故障演练, ECS关机实验, chaos engineering, 故障注入, ECS shutdown experiment
+
+  [26pts] huawei-cloud-ecs-vulnerability-auditor (computing/ecs/ecs) matched: ECS
+    Audit Huawei Cloud ECS instances for security vulnerabilities across host OS packages, running services, application dependencies (Java, Python, Node....
+    triggers: ECS漏洞扫描, ECS漏洞发现, 主机漏洞扫描, 容器漏洞发现, ECS资产收集
+
+  [20pts] huawei-cloud-ecs-query (monitoring/ecs/vpc) matched: ECS,弹性云服务器
+    查询华为云ECS弹性云服务器信息。仅用于查询，不包含创建/删除/规格变更等写操作。当用户需要查看华为云ECS实例列表、实例详情、实例状态时使用。支持AK/SK和Token两种认证方式，支持表格和JSON两种输出格式，支持多区域查询，支持 --detail/--full 增强输出（补全系统盘/数据盘大...
+
+  [18pts] huawei-cloud-ecs-alert (monitoring/ecs/ecs) matched: ECS
+    Automate batch creation and management of Huawei Cloud CES alarm rules for ECS instances using hcloud CLI v7.2.2+.
+  Use this skill to: (1) batch crea...
+
+  [18pts] huawei-cloud-ecs-dsh-deploy (computing/flexus-x/billing) matched: ECS
+    Huawei Cloud Flexus X Instance Deployment - DeepSeek Harness (dsh). ⚠️ Deployment involves actual charges, must confirm region/flavor/billing mode wit...
+    triggers: 部署DeepSeek Harness, 部署dsh, 部署DeepSeek智能体, 创建AI智能体服务器, Deploy DeepSeek Harness
+
+  [18pts] huawei-cloud-ecs-lifecycle (computing/ecs/ecs) matched: ECS
+    Manage the full lifecycle of Huawei Cloud ECS (Elastic Cloud Server) instances — create, list, show
+  details, start, stop, reboot, rename, delete, re...
+    triggers: 创建云服务器, 删除云服务器, 启动云服务器, 停止云服务器, 重启云服务器
+
+  [18pts] huawei-cloud-ecs-passwordless-login (computing/ecs/ecs) matched: ECS
+    Configure passwordless SSH login to Huawei Cloud ECS instances using COC (Cloud Operations Center). Automates IAM agency authorization, SSH key pair g...
+
+  [18pts] huawei-cloud-migration-vmware-ecs-private (migrationom/oos/ecs) matched: ECS
+    在私网环境下将 VMware 虚拟机迁移到华为云 ECS，适用于源端和目的端位于不同网络段、通过 VPN 打通的场景。无公网 IP/EIP、VPN 打通、代理 ECS 部署 squid+GOST+rsync 实现代理/转发/文件同步。触发词：私网迁移、私网环境迁移、VPN迁移、内网迁移、无公网迁移、...
+
+  [18pts] huawei-cloud-migration-windows-ecs (migrationom/oos/ecs) matched: ECS
+    华为云 SMS（Server Migration Service）Windows 主机迁移到 ECS 的自动化编排 Skill。
+  支持 Windows Server 2008/2008R2/2012/2012R2/2016/2019/2022/2025 及 Win7/8.1/10/11（64位）...
+
+  [16pts] huawei-cloud-sms-host-migrator (solution/migration/ecs) matched: ECS
+    End-to-end host migration assistant powered by Huawei Cloud Server Migration Service (SMS).
+  Assists users in discovering on-premise IDC or third-par...
+    triggers: 主机迁移, 整机迁移, 创建SMS迁移任务, 主机在线增量迁移与割接, host migration
+
+  [16pts] huawei-cloud-voucher-assistant (bss/billing/ecs) matched: ECS
+    Invoke this skill when a user is purchasing a Huawei Cloud (华为云) service and wants to know what coupons (代金券), discounts, or savings options are avail...
+    triggers: 购买云服务, 下单, 选购, 买一台, 续费
+
+  [15pts] huawei-cloud-mgc-migration-ecs-gcp-to-hw (migrationom/oos/terraform) matched: ECS
+    Execute and troubleshoot Huawei Cloud server migration in this repository. Supports both the current batch existing-target SMS workflow (`terraform ap...
+    triggers: migrate, migration, SMS, MGC, batch migration
+
+  [15pts] huawei-cloud-migration-ecs-across-region (migrationom/oos/terraform) matched: ECS
+    Execute and troubleshoot single-source Huawei Cloud server migration in this repository via SMS with rsync fallback, orchestrated by Terraform + `scri...
+
+  [13pts] huawei-cloud-ces-aom-capacity-assessment (monitoring/ces/nat) matched: ECS
+    Huawei Cloud capacity assessment. Assesses capacity for instances across 21 services (NAT/RDS/ECS/ELB/EIP/CSS/DDS/DWS/DCS/DMS/TaurusDB/GeminiDB/DC/ER/...
+    triggers: 容量评估、扩容建议、节日保障、压力系数、峰谷值倍数、预计节日上限、容量预测、capacity assessment、要不要扩容、ECS/RDS/CCE 够不够用
+
+  [13pts] huawei-cloud-find-skills (devtools/common/obs) matched: ECS
+    Invoke this skill to search, list, query, discover, browse, find and install any Huawei Cloud (华为云) agent skill. Triggers include: "华为云", "华为云有什么skill...
+    triggers: 华为云, 华为云有什么skill, 华为云相关skill, 华为云agent skill 市场, 华为云skill类目
+
+  [13pts] huawei-cloud-kunpeng-source-code-migrate (computing/kunpeng/cli) matched: ECS
+    Analyze the migrability of C/C++/ASM/Fortran/Go/Java/Python/Scala source code to Kunpeng (ARM64) platform using Huawei DevKit CLI tool. Connect to the...
+    triggers: 鲲鹏移植, 鲲鹏迁移, Kunpeng migration, Kunpeng porting, 源码迁移
+
+  [10pts] huawei-cloud-ecs-sqlbot-deploy (computing/flexus-x/flexus-x) matched: ECS
+    Purchase Huawei Cloud X Instance server + one-click deploy SQLBot intelligent query application.
+  Tech stack: Python 3.8+, Huawei Cloud SDK, COC (Clo...
+    triggers: deploy sqlbot, install sqlbot, sqlbot deploy, one-click deploy sqlbot, x-instance deploy sqlbot
+
+  [8pts] huawei-cloud-activity-submit (devtools/common/ecs) matched: ECS
+    直连华为云开放能力线上闯关挑战（activity_code=open-capability-2026-1024）的 Agent 提交接口（POST {base}/submit-activity-work），用 AK/SK 请求头（X-HW-AK / X-HW-SK / X-HW-Security-T...
+
+  [8pts] huawei-cloud-cli-guidance (devtools/cli/cli) matched: ECS
+    Provides guidance for Huawei Cloud KooCLI command-line tool operations.
+  Covers KooCLI installation, IAM authentication configuration, access credent...
+    triggers: Huawei Cloud, huaweiyun, 华为云"，"华为cli, 命令行"， KooCLI, hcloud
+
+  [8pts] huawei-cloud-devkit-webui-create (computing/kunpeng/ecs) matched: ECS
+    Install Kunpeng DevKit in WebUI mode on Huawei Cloud. Create a Kunpeng (aarch64) ECS via Python SDK with random password, encrypt password via Python ...
+    triggers: DevKit, Kunpeng DevKit, install DevKit, DevKit WebUI, Kunpeng DevKit
+
+  [8pts] huawei-cloud-sac-dify (solution/sac/ecs) matched: ECS
+    "Deploy Dify - an open-source LLM app development platform on Huawei Cloud with ECS via Terraform. Use when the user wants to deploy Dify (or an LLM a...
+    triggers: Dify 一键部署, Dify development, Agentic workflow, build AI App
+
+  [8pts] huawei-cloud-sac-yolo (solution/sac/ecs) matched: ECS
+    "Deploy YOLO training platform on Huawei Cloud with GPU ECS via Terraform. Use when building or managing a YOLO GPU training environment.
+    triggers: deploy YOLO, YOLO training, GPU training, 部署YOLO, YOLO训练
+
+  [5pts] huawei-cloud-cce-metric-analyzer (container/cce/cce) matched: ECS
+    Huawei Cloud CCE Metric analysis skill using the Python dispatcher with hcloud-backed cloud service queries.
+  Use this skill when the user wants to: ...
+    triggers: metric analysis, 指标分析, CCE metrics, CCE 指标, AOM metrics
+
+  [5pts] huawei-cloud-ces-drill-inspection (monitoring/ces/ces) matched: ECS
+    Fault drill steady-state inspection tool. Collects instance status and CES monitoring metrics across
+  Huawei Cloud multi-region ECS/RDS/DCS(Redis) an...
+    triggers: drill inspection, steady-state inspection, steady-state metrics, post-drill inspection
+
+  [5pts] huawei-cloud-devkit-application-check-cli (computing/kunpeng/cli) matched: ECS
+    Use Kunpeng DevKit CLI to collect installed software information (packages, middleware, databases) from application systems, analyze Maven POM file de...
+    triggers: system migration, information collection, maven migration, container migration, system migration assessment
+
+  [5pts] huawei-cloud-iac-reverse (devtools/terraform/terraform) matched: ECS
+    Reverse-engineer existing Huawei Cloud resources into deployable Terraform IaC code.
+  Queries all resources via RMS (Config/配置审计) API, analyzes specs...
+    triggers: 逆向生成IaC, 反向生成Terraform, 从现有资源生成代码, reverse engineer IaC, generate Terraform from existing resources
+
+  [5pts] huawei-cloud-iam-diagnose (security/iam/iam) matched: ECS
+    Invoke this skill to check whether a Huawei Cloud IAM user likely has permission to
+  perform an action/resource — 华为云 IAM 参考性权限分析/诊断. Given a user na...
+    triggers: 权限分析, 权限诊断, 权限评估, 是否有权限, 查权限
+
+  [5pts] huawei-cloud-mrs-new-cluster-planner (bigdata/mrs/mrs) matched: ECS
+    Huawei Cloud MRS new cluster spec planning. Derives YARN and storage requirements from business investigation, evaluates node specs, outputs Excel rep...
+    triggers: new MRS, new MRS cluster, MRS new cluster planning, MRS sizing, MRS cluster planning
+
+  [5pts] huawei-cloud-terraform-generator (devtools/terraform/terraform) matched: ECS
+    Generate Huawei Cloud Terraform configurations and execute deployment with user-guided approval. Use this skill when users want to create Huawei Cloud...
+
+  [data source: index: gitcode, map: gitcode]
+[退出码 0]

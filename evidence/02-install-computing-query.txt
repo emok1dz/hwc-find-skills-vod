@@ -1,0 +1,44 @@
+# 查看技能详情并安装：请介绍技能huawei-cloud-computing-query的功能点，并完成安装
+# 时间 2026-11-06T04:29Z（UTC）
+
+## 1. 技能详情（SKILL.md frontmatter）
+---
+name: huawei-cloud-computing-query
+description: "Queries Huawei Cloud computing resources (ECS/BMS/IMS/AS), Covers ECS instances, flavors, keypairs, quotas, server groups, block devices, NICs, VNC console, BMS bare metal servers/flavors/quotas, IMS images/OS versions/members/quotas, and AS scaling groups/configs/policies/activity logs/lifecycle hooks/warm pools/quotas. No write operations. Use this skill when the user needs to query ECS instance details, list flavors, check BMS availability, browse images, or view auto-scaling group/policy status. Triggers: 弹性云服务器, ECS, 裸金属, BMS, 镜像, IMS, 弹性伸缩, AS, 伸缩组, 伸缩策略, 规格查询, flavor, instance, image, scaling."
+---
+
+## 2. 功能点（按 scripts/ 子目录统计）
+ecs: 37 个脚本 — list_cloud_servers list_flavor_sell_policies list_flavors list_launch_template_versions list_recycle_bin_servers list_resize_flavors 
+bms: 15 个脚本 — list_bare_metal_server_details list_bare_metal_servers list_bare_metal_servers_detail list_baremetal_flavor_detail_extends show_available_resource show_baremetal_server_interface_attachments 
+ims: 12 个脚本 — list_image_by_tags list_image_members list_image_tags list_images list_images_tags list_os_versions 
+as: 30 个脚本 — _common list_all_scaling_v2_policies list_api_versions list_group_scheduled_tasks list_hook_instances list_life_cycle_hooks 
+iam: 1 个脚本 — get_project_id 
+
+## 3. 安装
+$ printf "\n" | npx skills add https://gitcode.com/huaweicloud/huaweicloud-skills.git#master --skill huawei-cloud-computing-query -y
+•  Installing to: Claude Code
+
+|
+o  Installation Summary --------------------------------------------------+
+|                                                                         |
+|  ./.agents/skills/huawei-cloud-computing-query                          |
+|    universal: Amp, Antigravity, Antigravity CLI, Cline, Codex +17 more  |
+|    symlink → Claude Code                                                |
+|                                                                         |
++-------------------------------------------------------------------------+
+|
+���.o  Installation complete
+
+|
+o  Installed 1 skill -----------------------------------------------------+
+|                                                                         |
+|  ✓ ./.agents/skills/huawei-cloud-computing-query                        |
+|    universal: Amp, Antigravity, Antigravity CLI, Cline, Codex +17 more  |
+|    symlinked: Claude Code                                               |
+|                                                                         |
++-------------------------------------------------------------------------+
+
+|
+—  Done!  Review skills before use; they run with full agent permissions.
+
+[退出码 0]
